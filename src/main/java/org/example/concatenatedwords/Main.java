@@ -12,7 +12,7 @@ public class Main {
         FileReaderService fileService = new FileReaderServiceImpl();
         List<String> words = fileService.getWordsFromFile("src/main/resources/wordsforproblem.txt");
         ConcatenatedWordService wordService = new ConcatenatedWordServiceImpl();
-        List<String> concatenatedWords =  wordService.getAllConcatenatedWords(words);
+        List<String> concatenatedWords = wordService.getAllConcatenatedWords(words);
         System.out.println(concatenatedWords.size());
         System.out.println(wordService.getLongestConcatenatedWord(concatenatedWords));
         System.out.println(wordService.getSecondLongestConcatenatedWord(concatenatedWords));

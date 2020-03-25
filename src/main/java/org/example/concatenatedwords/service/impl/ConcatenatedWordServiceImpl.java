@@ -21,7 +21,7 @@ public class ConcatenatedWordServiceImpl implements ConcatenatedWordService {
     }
 
     private boolean isConcat(String word, Set<String> words, int start, int end) {
-        if (end > word.length() || (end == word.length()  && start == 0)) {
+        if (end > word.length() || (end == word.length() && start == 0)) {
             return false;
         }
         String temp = word.substring(start, end);
